@@ -38,20 +38,16 @@
 <path d="M300 100 L 270 190" stroke="red"/>
 
 <!-- and something similar, a different way: -->
+<!-- for S, the origin is assumed to be at the end point of the preceding curve, and 
+     the first control point is inferred to be a reflection of the last control point of the preceding curve -->
 <path d="M400 100 C 380 10, 520 10, 500 100  S 620 190, 600 100" stroke="black" fill="transparent" />
 <circle cx="400" cy="100" r="2" fill="red"/>
 <circle cx="380" cy="10" r="2" fill="red"/>
 <circle cx="520" cy="10" r="2" fill="red"/>
 <circle cx="500" cy="100" r="2" fill="red"/>
 <circle cx="620" cy="190" r="2" fill="pink"/>
-<circle cx="600" cy="100" r="2" fill="blue"/>
+<circle cx="600" cy="100" r="3" fill="purple"/>
 <path d="M400 100 L 380 10" stroke="red"/>
 <path d="M500 100 L 520 10" stroke="red"/>
-
- <path d="M10 80 C 40 10, 65 10, 95 80       S 150 150, 180 80" stroke="black" fill="transparent"/>
-<circle cx="150" cy="150" r="2" fill="blue"/>
-<circle cx="180" cy="80" r="2" fill="blue"/>
-
-
 
 </svg>

@@ -1,0 +1,35 @@
+<svg version="1.1" baseProfile="full" width="1000" height="1000" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+<path d="M350 30 L 400 450" stroke="black" fill="transparent" />
+
+<!-- arc specification 
+A rx ry x-axis-rotation large-arc-flag sweep-flag x y
+ a rx ry x-axis-rotation large-arc-flag sweep-flag dx dy
+
+where rx is major radius and ry is minor?
+-->
+<text x="600" y="60">sweep flag 0</text>
+<path d="M500 50 
+A 30 15 0 0 0 600 30" stroke="black" fill="transparent" />
+<circle r="2" cx="550" cy="40" fill="red" />
+<!-- "major radius" or "x radius" 550 - 496 approx.  That's about 64. -->
+<path d="M550 40 L 496 40" stroke="red" fill="transparent" />
+<!-- "minor radius" or "y radius" 40 - 13 approx.  That's about 27. -->
+<path d="M550 40 L 550 13" stroke="red" fill="transparent" />
+
+<path d="M550 50 L 520 50" stroke="red" fill="transparent" />
+<path d="M550 50 L 550 65" stroke="purple" fill="transparent" />
+<circle r="2" cx="500" cy="50" fill="red" />
+<circle r="2" cx="600" cy="30" fill="red" />
+
+<text x="450" y="20">sweep flag 1</text>
+<path d="M500 50 
+A 30 15 0 0 1 600 30" stroke="blue" fill="transparent" />
+
+<path d="M10 315 
+L 110 215 
+A 30 50 0 0 1 162.55 162.45 
+L 172.55 152.45 
+A 30 50 -45 0 1 215.1 109.9
+L 315 10"
+stroke="black" fill="green" stroke-width="2" fill-opacity="0.5"/>
+</svg>
